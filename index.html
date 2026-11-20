@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>You don’t have to conquer it · Dingo’s Diary</title>
+    <meta
+      name="description"
+      content="How Dingo Dave teaches four-wheel driving: read the country, take the fear out, and come home."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Raleway:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #001838;
+        --paper: #f6f4ef;
+        --card: #ffffff;
+        --muted: #3a4d60;
+        --line: #d5dde4;
+        --ember: #c83f28;
+        --mist: #d5dee6;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Barlow, ui-sans-serif, system-ui, sans-serif;
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1, h2, blockquote p {
+        font-family: Raleway, Barlow, ui-sans-serif, sans-serif;
+        font-weight: 700;
+        text-wrap: balance;
+        line-height: 1.15;
+      }
+      p { text-wrap: pretty; }
+      a { color: var(--ember); }
+      a:focus-visible { outline: 2px solid var(--ember); outline-offset: 2px; }
+      header {
+        background: var(--ink);
+        color: #fffaf8;
+      }
+      .bar { height: 6px; background: var(--ember); }
+      .head-row, .wrap, footer .wrap {
+        width: min(72rem, calc(100% - 2rem));
+        margin: 0 auto;
+      }
+      .head-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        min-height: 4.5rem;
+      }
+      .brand small {
+        display: block;
+        color: var(--mist);
+        font-size: 0.75rem;
+        letter-spacing: 0.04em;
+      }
+      .brand strong {
+        font-family: Raleway, Barlow, sans-serif;
+        font-size: 1.25rem;
+      }
+      .head-row a { color: #fffaf8; }
+      .layout {
+        display: grid;
+        gap: 2rem;
+        padding: 2.5rem 0 4rem;
+      }
+      nav ol {
+        display: flex;
+        gap: 0.5rem;
+        overflow-x: auto;
+        list-style: none;
+        margin: 0;
+        padding: 0 0 0.25rem;
+      }
+      nav a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 2.75rem;
+        padding: 0 1rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--card);
+        color: var(--ink);
+        text-decoration: none;
+        font-size: 0.9rem;
+        white-space: nowrap;
+      }
+      nav span { color: var(--ember); margin-right: 0.4rem; }
+      .kicker {
+        color: var(--ember);
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+      }
+      h1 { font-size: clamp(2.4rem, 6vw, 3.25rem); margin: 0.6rem 0 0; }
+      .dek { font-size: 1.25rem; color: var(--muted); }
+      .byline { color: var(--muted); font-size: 0.9rem; }
+      h2 { font-size: 1.85rem; margin: 2.75rem 0 0; }
+      article p { font-size: 1.05rem; }
+      blockquote {
+        margin: 2rem 0;
+        padding-left: 1.25rem;
+        border-left: 4px solid var(--ember);
+      }
+      blockquote p { font-size: 1.45rem; margin: 0; }
+      .notes { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.5rem; }
+      .notes ol { padding-left: 1.2rem; }
+      .notes li { margin: 0.7rem 0; }
+      .notes a { color: var(--ink); }
+      footer {
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.9rem;
+        padding: 1.5rem 0 2rem;
+      }
+      @media (min-width: 960px) {
+        .layout { grid-template-columns: 13rem minmax(0, 40rem); gap: 4rem; }
+        nav ol {
+          position: sticky;
+          top: 2rem;
+          display: flex;
+          flex-direction: column;
+          overflow: visible;
+        }
+        nav a {
+          border: 0;
+          background: transparent;
+          border-radius: 0;
+          padding: 0;
+          color: var(--muted);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="bar"></div>
+      <div class="head-row">
+        <div class="brand">
+          <small>Australian Offroad Academy</small>
+          <strong>Dingo’s Diary</strong>
+        </div>
+        <a href="https://www.australianoffroadacademy.com.au/">The academy</a>
+      </div>
+    </header>
+    <main class="wrap layout">
+      <nav aria-label="In this essay">
+        <ol>
+          <li><a href="#the-lesson"><span>1</span>The lesson</a></li>
+          <li><a href="#read-the-country"><span>2</span>Read the country</a></li>
+          <li><a href="#confidence"><span>3</span>Confidence</a></li>
+          <li><a href="#unglamorous"><span>4</span>The unglamorous work</a></li>
+          <li><a href="#what-a-teacher-is-for"><span>5</span>What a teacher is for</a></li>
+          <li><a href="#notes"><span>6</span>Notes</a></li>
+        </ol>
+      </nav>
+      <article>
+        <p class="kicker">Teaching</p>
+        <h1>You don’t have to conquer it</h1>
+        <p class="dek">
+          Dingo Dave teaches four-wheel driving as outdoor education. The trip is the point. The skill
+          is what makes the trip possible. The country is not something you are supposed to beat.
+        </p>
+        <p class="byline">A reading of Dave Darmody · Australian Offroad Academy / <time datetime="2026-11-21">21 November 2026</time></p>
+
+        <section id="the-lesson">
+          <h2>The lesson</h2>
+          <p>
+            That line runs through the academy and through his own writing. The mission is skills enough
+            that the driver and the vehicle can handle the terrain they actually chose — safely,
+            securely, and with real joy. Adult education sits at the centre: engaging, interesting,
+            entertaining, and safe, whether the day is a course or a tour.
+          </p>
+          <p>
+            He describes himself as a qualified outdoor and environmental education teacher, and he has
+            spent that career on real tracks. Owning a four-wheel drive is not the same as knowing how
+            to use one. The low-range day exists to close that gap. Big adventures, as he still says it,
+            start with the right skills.
+          </p>
+          <blockquote>
+            <p>Safely, securely and with real joy. The academy’s own test of a day that worked.</p>
+          </blockquote>
+        </section>
+
+        <section id="read-the-country">
+          <h2>Read the country</h2>
+          <p>
+            The practical version is simple, and it is stricter than a tip sheet. You read the track
+            before you drive it. You set the vehicle up for that surface. You climb and descend
+            properly. A water crossing includes knowing when not to attempt it. Recovery is for the bog
+            you are actually likely to meet. Minimum-impact driving is there so the track is still a
+            track for the next crew.
+          </p>
+          <p>
+            Sand is the same idea on a different surface. In Dingo’s Diary he refuses a single magic
+            tyre pressure. Rain-hardened sand and a chopped-up K’gari beach at the end of the holidays
+            are not the same number. The tide comes before the beach. Once the tyres are down, the
+            driving has to change: slower, no hard braking, no sharp turns, or a bead comes off the
+            rim. The lesson is not “let them down.” It is that the sand you have today decides the rest.
+          </p>
+          <p>
+            Planning gets the same treatment. Do not bite off a day’s distance that pushes you into the
+            night, among animals, short of fuel. Carry the extra fuel. Carry two spares and a plug kit.
+            Half a holiday in a remote town waiting for a tyre to be flown in is not the fun.
+          </p>
+          <blockquote>
+            <p>
+              You don’t have to conquer an environment to enjoy it. You do not have to cross the Simpson
+              to have been in the desert.
+            </p>
+          </blockquote>
+          <p>
+            He said the first of those sentences in 2026, in a conversation with Jamie Hazelden and Rick
+            O’Brien. Conquest is the habit he is pushing back on. Fifteen dunes in can be the whole
+            experience. The Cape is not a trophy you fail by not finishing.
+          </p>
+        </section>
+
+        <section id="confidence">
+          <h2>Confidence is taught</h2>
+          <p>
+            Fear is the thing to take out, not the thing to mock. On K’gari he has described the job as
+            taking the fear out of beach driving while still treating a World Heritage coast, dingoes
+            included, as country you do not get to damage.
+          </p>
+          <p>
+            He is careful about whose confidence is in the car. The driver’s confidence does not
+            transfer to a partner, a mate, or a child. Start them on something they can finish. A
+            shower, a decent chair and a fire are not softness. They are why people come back, and
+            people who come back are the ones who will look after the place. Getting children outside
+            is, in his diary, part of keeping the country open.
+          </p>
+          <p>
+            The same idea shows up in the women-only days. A lot of the people he wants in the driver’s
+            seat have been permanent passengers, or they would rather learn from someone who is not
+            their partner. Girls Got Grit, built with Tourism Queensland, was a structured weekend:
+            learn the vehicle, drive the island or the country, get dirty, and still enjoy the place.
+            His test of a good day is that the ego and the self-doubt both drop, no question is silly,
+            and the trainer is there for the skill — not to lead a convoy that happens to have a swag
+            on the roof.
+          </p>
+        </section>
+
+        <section id="unglamorous">
+          <h2>The unglamorous work</h2>
+          <p>
+            He is impatient with the catalogue. “Off-road”, “extreme” and “tactical” are marketing
+            words. A long drawbar does not make a trailer more capable. Packing the house into the
+            camper does not make the trip better. Comfortable chairs and a warm bag, yes. An extra of
+            everything, no. The further you actually want to go, the more compact the trailer needs to
+            be.
+          </p>
+          <p>
+            The must-dos he writes down are the dull ones: rustproofing, a proper cargo barrier, tyres
+            that match the load, and reading the insurance wording to see whether “off-road” is actually
+            covered. Before a remote trip he wants a shakedown close to home, so a bolt that walks out
+            does it on a weekend, not on day nine.
+          </p>
+          <blockquote><p>Remote is a state of mind, not a place.</p></blockquote>
+          <p>
+            That is from his 2022 note on remote camping. Distance from the nearest people, not a badge
+            for how far you drove. You do not need to be in the middle of the desert to feel a long way
+            from the crowd. A plan is a starting set of ideas. A torn sidewall, or a better camp
+            mentioned at a roadhouse, should be allowed to change it. Someone at home still needs to
+            know when you were meant to call. A personal locator beacon is the simple version of that
+            promise. Lithium, purple lights and a complicated camp are optional. A torch and a burner
+            that you have already tested are not.
+          </p>
+          <p>
+            Recovery is taught by doing it. At Rainbow Beach in 2025 he had a crew bog a vehicle on
+            purpose. A practised recovery is the point. A surprise one is how people get hurt. Winch,
+            dampener, recovery points, convoy radio, the check before you start. Theory, then the sand.
+          </p>
+        </section>
+
+        <section id="what-a-teacher-is-for">
+          <h2>What a teacher is for</h2>
+          <p>
+            Share the mistake you have already made, so the next driver does not have to make it in the
+            same creek. Say it plainly enough that a family can use it: in a diary, on the Offroad
+            Adventure Show, or on a show lawn talking about how to prepare for the outback. Then get
+            them home.
+          </p>
+          <p>
+            The trainers around him are described the same way he teaches: experienced, nationally
+            accredited, approachable in a group or one to one. The four-wheel drive, in the academy’s
+            own words, is how families get to the trip.
+          </p>
+        </section>
+
+        <section class="notes" id="notes">
+          <h2>Notes</h2>
+          <p>
+            Drawn from his published writing and from the academy’s own account of how a day is taught.
+            Not a transcript of a private conversation, and not a course outline.
+          </p>
+          <ol>
+            <li><a href="https://www.australianoffroadacademy.com.au/about-us">Australian Offroad Academy, About</a></li>
+            <li><a href="https://www.australianoffroadacademy.com.au/offroad-ready-courses">Offroad Ready courses</a></li>
+            <li><a href="https://rvdaily.com.au/are-you-ready-for-a-remote-camping-trip/">Dave Darmody, “Are you ready for a remote camping trip?”, RV Daily, 21 December 2022</a></li>
+            <li><a href="https://rvdaily.com.au/do-you-really-need-to-pack-that-beginners-tips-for-off-road-towing/">Dave Darmody, “Do you really need to pack that?”, RV Daily</a></li>
+            <li><a href="https://unsealed4x4.com.au/what-goes-on-in-female-only-4wd-sessions/">Dave Darmody, “What goes on in female-only 4WD sessions?”, Unsealed 4X4, 17 April 2023</a></li>
+            <li><a href="https://unsealed4x4.com.au/must-dos-for-your-4wd/">Dave Darmody, “Must-do’s for your 4WD”, Unsealed 4X4, 13 February 2023</a></li>
+            <li><a href="https://www.youtube.com/watch?v=hl2ei3XvwJQ">You Don’t Have to Conquer It, with Dave Darmody, Jamie Hazelden and Rick O’Brien, 16 August 2026</a></li>
+            <li><a href="https://www.bmrg.org.au/news/staff-4wd-and-utv-training">Burnett Mary Regional Group, Rainbow Beach training led by Dave Darmody, 1 May 2025</a></li>
+          </ol>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div class="wrap">A public copy of Dingo’s Diary. Not a course booking.</div>
+    </footer>
+  </body>
+</html>
