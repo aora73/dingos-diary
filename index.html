@@ -59,6 +59,14 @@
         gap: 0.75rem;
         min-height: 4.5rem;
       }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: inherit;
+        text-decoration: none;
+      }
+      .brand img { width: 2.5rem; height: 2.5rem; display: block; }
       .brand small {
         display: block;
         color: var(--mist);
@@ -123,7 +131,16 @@
         border-radius: 0.5rem;
       }
       figcaption { margin-top: 0.5rem; color: var(--muted); font-size: 0.9rem; }
-      figcaption a { color: var(--ink); }
+      figure.patch { width: min(16rem, 70%); margin-left: auto; margin-right: auto; }
+      figure.patch img { border: 0; background: transparent; }
+      figure.film video {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid var(--line);
+        border-radius: 0.5rem;
+        background: var(--card);
+      }
       nav { min-width: 0; max-width: 100%; }
       .notes { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.5rem; }
       .notes ol { padding-left: 1.2rem; }
@@ -158,10 +175,13 @@
     <header>
       <div class="bar"></div>
       <div class="head-row">
-        <div class="brand">
-          <small>Australian Offroad Academy</small>
-          <strong>Dingo’s Diary</strong>
-        </div>
+        <a class="brand" href="#the-lesson">
+          <img src="photos/dingo-mark.png" alt="" />
+          <span>
+            <small>Australian Offroad Academy</small>
+            <strong>Dingo’s Diary</strong>
+          </span>
+        </a>
         <a href="https://www.australianoffroadacademy.com.au/">The academy</a>
       </div>
     </header>
@@ -174,7 +194,8 @@
           <li><a href="#confidence"><span>4</span>Confidence</a></li>
           <li><a href="#unglamorous"><span>5</span>The unglamorous work</a></li>
           <li><a href="#what-a-teacher-is-for"><span>6</span>What a teacher is for</a></li>
-          <li><a href="#notes"><span>7</span>Notes</a></li>
+          <li><a href="#the-mark"><span>7</span>The mark</a></li>
+          <li><a href="#notes"><span>8</span>Notes</a></li>
         </ol>
       </nav>
       <article>
@@ -362,6 +383,32 @@
           </p>
         </section>
 
+        <section id="the-mark">
+          <h2>The mark</h2>
+          <p>
+            The directory uses two stamps, and they are not the same name. Dingo Dave Approved.
+            Dingo Dave Recommends. Under them sit the places a trip actually uses: campgrounds and
+            free camps, hotels, motels and bed and breakfasts, caravan parks, national parks, state
+            forests. The film is the stamp coming down. The patch is the same name, sewn — a vehicle,
+            a winch, a fire, the tools.
+          </p>
+          <figure class="film">
+            <video controls playsinline preload="metadata" poster="photos/dingo-approved-poster.jpg">
+              <source src="media/dingo-approved.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Dingo Approved. Six seconds.</figcaption>
+          </figure>
+          <figure class="patch">
+            <img src="photos/dingo-dave-patch.png" alt="An embroidered shield patch: a pink dingo, a four-wheel drive, a winch, a campfire and crossed tools, lettered Dingo Dave." />
+            <figcaption>The sewn mark. <a href="https://dingo-dave.com.au/">Dingo Dave</a></figcaption>
+          </figure>
+          <p>
+            The site states the work in three lines: educate, share the trips, and celebrate the ones
+            other people bring back. Fieldstay still scores a stay from a road trip. This stamp is
+            his, and it is a different mark.
+          </p>
+        </section>
+
         <section class="notes" id="notes">
           <h2>Notes</h2>
           <p>
@@ -377,6 +424,7 @@
             <li><a href="https://unsealed4x4.com.au/must-dos-for-your-4wd/">Dave Darmody, “Must-do’s for your 4WD”, Unsealed 4X4, 13 February 2023</a></li>
             <li><a href="https://www.youtube.com/watch?v=hl2ei3XvwJQ">You Don’t Have to Conquer It, with Dave Darmody, Jamie Hazelden and Rick O’Brien, 16 August 2026</a></li>
             <li><a href="https://www.bmrg.org.au/news/staff-4wd-and-utv-training">Burnett Mary Regional Group, Rainbow Beach training led by Dave Darmody, 1 May 2025</a></li>
+            <li><a href="https://dingo-dave.com.au/">Dingo Dave, directory</a></li>
           </ol>
         </section>
       </article>
