@@ -56,7 +56,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 1rem;
+        gap: 0.75rem;
         min-height: 4.5rem;
       }
       .brand small {
@@ -103,17 +103,28 @@
         font-weight: 600;
         letter-spacing: 0.04em;
       }
-      h1 { font-size: clamp(2.4rem, 6vw, 3.25rem); margin: 0.6rem 0 0; }
-      .dek { font-size: 1.25rem; color: var(--muted); }
+      h1 { font-size: clamp(2rem, 8vw, 3.25rem); margin: 0.6rem 0 0; }
+      .dek { font-size: 1.125rem; color: var(--muted); }
       .byline { color: var(--muted); font-size: 0.9rem; }
-      h2 { font-size: 1.85rem; margin: 2.75rem 0 0; }
+      h2 { font-size: clamp(1.5rem, 5vw, 1.85rem); margin: 2.75rem 0 0; }
       article p { font-size: 1.05rem; }
       blockquote {
         margin: 2rem 0;
-        padding-left: 1.25rem;
+        padding-left: 1rem;
         border-left: 4px solid var(--ember);
       }
-      blockquote p { font-size: 1.45rem; margin: 0; }
+      blockquote p { font-size: clamp(1.2rem, 4.5vw, 1.45rem); margin: 0; }
+      figure { margin: 1.75rem 0; }
+      figure img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid var(--line);
+        border-radius: 0.5rem;
+      }
+      figcaption { margin-top: 0.5rem; color: var(--muted); font-size: 0.9rem; }
+      figcaption a { color: var(--ink); }
+      nav { min-width: 0; max-width: 100%; }
       .notes { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.5rem; }
       .notes ol { padding-left: 1.2rem; }
       .notes li { margin: 0.7rem 0; }
@@ -173,6 +184,10 @@
           is what makes the trip possible. The country is not something you are supposed to beat.
         </p>
         <p class="byline">A reading of Dave Darmody · Australian Offroad Academy / <time datetime="2026-11-21">21 November 2026</time></p>
+        <figure>
+          <img src="photos/dingo-dave-briefing.jpg" alt="Dingo Dave in a cap and sunglasses, a radio on his chest, both hands up as he explains a point." />
+          <figcaption>Dingo Dave, mid-briefing. <a href="https://www.australianoffroadacademy.com.au/about-dingo-dave">Photo: Australian Offroad Academy</a></figcaption>
+        </figure>
 
         <section id="the-lesson">
           <h2>The lesson</h2>
@@ -202,6 +217,10 @@
             you are actually likely to meet. Minimum-impact driving is there so the track is still a
             track for the next crew.
           </p>
+          <figure>
+            <img src="photos/aora-crossing.jpg" alt="A four-wheel drive and camper trailer part-way through a shallow, clear creek." />
+            <figcaption>A crossing. The lesson includes the ones you do not attempt. <a href="https://www.australianoffroadacademy.com.au/about-us">Photo: Australian Offroad Academy</a></figcaption>
+          </figure>
           <p>
             Sand is the same idea on a different surface. In Dingo’s Diary he refuses a single magic
             tyre pressure. Rain-hardened sand and a chopped-up K’gari beach at the end of the holidays
@@ -209,6 +228,10 @@
             driving has to change: slower, no hard braking, no sharp turns, or a bead comes off the
             rim. The lesson is not “let them down.” It is that the sand you have today decides the rest.
           </p>
+          <figure>
+            <img src="photos/dingo-dave-sand.jpg" alt="Dingo Dave on a pale beach in an Offroad Ready shirt, a camera crew and paperbarks behind him." />
+            <figcaption>On the sand, with the camera still rolling. <a href="https://www.australianoffroadacademy.com.au/about-dingo-dave">Photo: Australian Offroad Academy</a></figcaption>
+          </figure>
           <p>
             Planning gets the same treatment. Do not bite off a day’s distance that pushes you into the
             night, among animals, short of fuel. Carry the extra fuel. Carry two spares and a plug kit.
@@ -282,6 +305,10 @@
             purpose. A practised recovery is the point. A surprise one is how people get hurt. Winch,
             dampener, recovery points, convoy radio, the check before you start. Theory, then the sand.
           </p>
+          <figure>
+            <img src="photos/aora-recovery.jpg" alt="A person kneeling at the front of a Toyota, fitting orange recovery boards in the mud." />
+            <figcaption>Recovery boards out, on a course day. <a href="https://www.australianoffroadacademy.com.au/offroad-ready-courses">Photo: Australian Offroad Academy</a></figcaption>
+          </figure>
         </section>
 
         <section id="what-a-teacher-is-for">
@@ -292,6 +319,10 @@
             Adventure Show, or on a show lawn talking about how to prepare for the outback. Then get
             them home.
           </p>
+          <figure>
+            <img src="photos/dingo-dave-crew.jpg" alt="Dingo Dave, seen from behind in a cap, briefing a crew in high-visibility orange beside a four-wheel drive." />
+            <figcaption>The briefing beside the vehicles. The sleeve reads the academy site. <a href="https://www.australianoffroadacademy.com.au/about-dingo-dave">Photo: Australian Offroad Academy</a></figcaption>
+          </figure>
           <p>
             The trainers around him are described the same way he teaches: experienced, nationally
             accredited, approachable in a group or one to one. The four-wheel drive, in the academy’s
